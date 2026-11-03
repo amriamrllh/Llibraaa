@@ -75,20 +75,20 @@ Pick the section matching your harness. In every method, the end goal is the sam
 1. Create the skill directory:
    ```bash
    # Windows
-   mkdir "%USERPROFILE%\.claude\skills\synced\I-AM-LLIBRAA"
+   mkdir "%USERPROFILE%\.config\agents\I-AM-LLIBRAA"
 
    # Linux / macOS
-   mkdir -p ~/.claude/skills/synced/I-AM-LLIBRAA
+   mkdir -p ~/.config/agents/I-AM-LLIBRAA
    ```
 2. Copy the identity file into it and rename it to `SKILL.md`:
    ```bash
-   cp /path/to/repo/Llibraa-v1.md "%USERPROFILE%\.claude\skills\synced\I-AM-LLIBRAA\SKILL.md"
+   cp /path/to/repo/Llibraa-v1.md "%USERPROFILE%\.config\agents\I-AM-LLIBRAA\SKILL.md"
    ```
 3. Register the skill in `opencode.json` (adjust the path to your OS):
    ```json
    {
      "skills": [
-       { "name": "I-AM-LLIBRAA", "path": "~/.claude/skills/synced/I-AM-LLIBRAA" }
+       { "name": "I-AM-LLIBRAA", "path": "~/.config/agents/I-AM-LLIBRAA" }
      ],
      "systemPrompt": "Load the [I'AM-LLIBRAA] skill at the start of every session."
    }
